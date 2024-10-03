@@ -26,7 +26,7 @@ export default function Login({ navigation}) {
         />
       </Box>
 
-      <Botao>
+      <Botao onPress={() => navigation.navigate('Tabs')}>
         Entrar
       </Botao>
 

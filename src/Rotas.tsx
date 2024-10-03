@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import Cadastro from "./Cadastro";
 import Login from "./Login";
+import Tabs from "./tabs";
 
 const Tab = createNativeStackNavigator();
 
@@ -17,6 +18,11 @@ export default function Rotas(){
                 <Tab.Screen
                     name="Cadastro" component={Cadastro}
                 />
+                <Tab.Screen
+                    name="Tabs" component={Tabs}
+                    options={{headerShown: false}}
+                />
+
             </Tab.Navigator>
         </NavigationContainer>
     )
